@@ -3,133 +3,177 @@
    <head>
      <meta charset="utf-8">
      <meta name="viewimport" content="width=device-width">
-     <title>Meet Daniel</title>
+     <title>Meet Daniel Keum</title>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
      <link rel="stylesheet" href="css/my_styles.css">
-   </head>
-
-
-
+    </head>
+ 
    <body>
-    <header>
-        <h1>Daniel Keum</h1>
-      
-        <nav>
-          <ul>
-            <li><a href="#fav_hobbies">Favorite Hobbies</a></li>
-            <li><a href="#short_quotes">Being Vegan</a></li>
-            <li><a href="#linkedin">HTML5</a></li>
-          </ul>
-        </nav>
-      </header>
+        <article>
+            <div class="rectangle_black">
+               <div>
+                  <img class="profile_pic_img" src="assets/my_profile.jpg" alt="My profile picture" title="This is me!">
+                </div> 
+                <div class="card profile_description">
+                  <div class="card-body">
+                      <h1 class="center-heading">Daniel Keum</h1> 
+                      <p>Greater Vancouver Area</p> 
+                  </div> 
+                </div> 
+            </div> 
 
-     <main>
-     <img title="this is definitely a picture of me... wink wink" alt="a picture of Daniel Keum" width=300 src="https://raw.githubusercontent.com/dkeum/Personal-Projects-/master/duck.jpg">
-     
-     
-     <article id="fav_hobbies">
-        <header>
-        <h2>My favorite hobbies:</h2> 
-       </header>
-            <ol start="10">
-             <li>swimming</li>
-             <li>bowling</li>
-             <li>basketball</li>
-            </ol>
-       </article>
+            <div class="rectangle_white">
+                <div class="rectangle_grey"></div>
+                  <section id="about">
+                    <div class="card" style="width:85%;">
+                      <div class="card-body">
+                        <h1 class="center-heading">About</h1> 
+                        <ul>
+                          <li>Computer Engineer - Simon Fraser University (Grad 2023 with Bachelor)</li>
+                          <li>Firmware Validation Engineer</li>
+                          <li>Aspiring Full Stack Engineer</li>
+                        </ul>
+                    </div> 
+                  </div> 
+                </section>
 
-    <hr>
+                 <!-- Projects -->
+    <section class="projects" id="projects">
+        <h2>
+          Projects
+        </h2>
+       
+        <style>
+          /* Hide the mute button */
+          video::-webkit-media-controls-mute-button {
+            display: none;
+          }
+        </style>
 
-    <article id="short_quotes">
-        <header>
-           <h1>Short Quotes: </h1> 
-        </header>
-     <p>
-        <q>To err is human</q> - Alexander Pope 
-        <blockquote> More quotes lol</blockquote>
-        <pre>
-            HI  ... everybody
-        </pre>
-     </p>
-    </article>
+          <div id="projects-container" class="projects-container">
+            <div class="project-card card_description">
+              <h3 style="margin-top: -5%;">Academic Projects </h3>
+              <h4 style="color: black"> Acoustic Frequencies Visualizer</h4>
+              <div class="project-content">
+                <video controls muted width="80%" height="300">
+                 <source src="assets/ensc452.mov">
+                  The browser does not support videos.
+                </video>
+               <p>
+                 Created a C/C++ embedded system (Developed on Vivado using Zynq on Zedboard) 
+                  that detect acoustic frequencies from streaming music
+                  and displays falling shapes directed into a bin. 
+                </p>
+              </div>
+            </div>
+          </div>
 
+          
+            <div id="projects-container" class="projects-container">
+            <div class="project-card card_description">
+              <h4 style="color: black; margin-top: 2%;">SpicePro - Capstone</h4>
+              <div class="project-content" style="margin-top: -5%;">
+              <video controls width="400" height="300">
+                <source src="assets/spice_pro.mp4">
+                The browser does not support videos.
+              </video>
+              <p>
+                Automatic spice dispenser that behaves like a vending machine for spices. 
+                Created the interface using arduino RA8875 touch screen. 
+              </p>
+            </div>
+          </div>
+          </div>
+      </section>
 
-    <article id="linkedin">
-    <header>
-        <h2>Linkedin </h2> 
-    </header>
-     <p>
-        Say hello at my linkedin profile <a href="https://www.linkedin.com/in/daniel-keum-9361a6186/" target="_blank">@DanielKeum</a>
-     </p>
-     <section>
-        <a href="assets/random.txt" download target="_blank">a random file </a>
+      <section class="courses_taken" id="courses_taken">
+
+        <div class="card" style="width:80%; margin-top: 10%;">
+          <div class="card-body">
+            <h3 class="center-heading"><u>Personal Projects</u></h3> 
+            <div class="project-container_v1">
+            <p> <b>IBM CAD101EN:</b>
+              <!-- hide this info -->
+              Introduction to Web Development with HTML5, CSS3, and JavaScript
+              <p>project: single page portfolio website</p>
+              <p>url:  <a href="https://github.com/dkeum/HTML_CSS_practice/tree/main/singlepage_website/finalproject_startercode" target="_blank">github link</a> </p>
+          </p>
+          </div>
+        </div> 
+      </div> 
+        
+
+      <div class="card" style="width:80%; margin-top: 5%;">
+        <div class="card-body">
+          <div class="project-container_v1">
+          <p> <b>W3Cx HTML5.0x:</b>
+            <!-- hide this info -->
+            HTML5 and CSS Fundamentals
+            <p>project: Spaghetti Recipe </p>
+            <p>url:  <a href="https://codepen.io/caloscia96/pen/RwYNEqd" target="_blank">codepen link</a> </p>
+        </p>
+        </div>
+      </div> 
+    </div> 
+
+    <div class="card" style="width:80%; margin-top: 5%;">
+      <div class="card-body">
+        <div class="project-container_v1">
+        <p> <b>IBM CAD0210EN:</b>
+          <!-- hide this info -->
+          Developing Front End Apps with React
+          <p>project: Company Budget App </p>
+          <p>url:  <a href="https://github.com/dkeum/ejtos-react_budget_app" target="_blank">github link</a> </p>
+      </p>
+      </div>
+    </div> 
+  </div> 
+
+  <div class="card" style="width:80%; margin-top: 5%;">
+    <div class="card-body">
+      <div class="project-container_v1">
+      <p> <b>IBM CAD220EN:</b>
+        <!-- hide this info -->
+        Back-end Application Development with Node.js and Express
+        <p>project: Friends List Application </p>
+        <p>url:  <a href="https://github.com/dkeum/expressBookReviews" target="_blank">github link</a> </p>
+    </p>
+    </div>
+  </div> 
+</div> 
+        
+<div class="card" style="width:80%; margin-top: 5%;">
+  <div class="card-body">
+    <div class="project-container_v1">
+    <p> <b>IBM DB0211EN:</b>
+      <!-- hide this info -->
+      Django Application Development with SQL and Databases
+       <!-- This credential earner is able to describe a database and how to model data. 
+                  This includes: composing SQL queries to insert, select, update, and delete data in a database; 
+                  understanding Object Relational Model (ORM), integrating Bootstrap into your Django template 
+                  and building interactive web pages; employing Django to develop 
+                  database-powered applications; and creating and deploying a Django app on the cloud. -->
+      <p>project: Course Management System</p>
+      <p>url:  <a href="https://github.com/dkeum/tfjzl-final-cloud-app-with-database" target="_blank">github link</a> </p>
+  </p>
+  </div>
+</div> 
+</div>         
+      </section>
+
+    </section >
+    <div class="card" style="width:80%;margin-top:5%">
+    <div class="card-body">
+      <div class="project-container_v1">
+        <p>Thanks for reading my website &#128540</p>
+        <p>Please message on Linkedin or email me if you have any questions
+          <a href="https://www.linkedin.com/in/daniel-keum-9361a6186/" target="_blank">Linkedin Page</a></p>
+          <p>my Email: <a href="mailto: dkeum@sfu.ca">Email</a></p>
+      </div>
+     </div>
+    </div>
     </section>
-    <details>
-        <summary>Authors</summary>
-        <div class="bluebird">Author1</div>
-        <p>Author2</p>
-    </details>
-   </article>  
-
-    </body>
-</main>
-
-    <footer>
-        <p>Written by: Daniel Keum</p>
-        <p>Contact information: <a href="mailto:dkeum@sfu.ca">
-            dkeum@sfu.ca</a>.</p>
-    </footer>
-
+        </article>
+        
+   </body>
 </html>
-
-
-<!-- 
-
-
-  video and audio 
-  https://codepen.io/m8trix310/pen/yLQRZLx
-  
-  tables
-  https://codepen.io/caloscia96/pen/LYJoRmd
-  
-  
-  iframes, ismap,usemap good for ads (click different parts of the screen for different link )
-  <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <title>The iframe element</title> 
-</head>
-<body>
-<p>This is a parent page that will host the iframe.</p>
-<iframe src="https://www.w3.org/">
-</iframe>
-</body>
-</html>
-  iframe {
-  border: 10px solid red;
-  padding: .5rem;
-  margin: 1rem;
-  box-shadow: 20px 20px 10px #888888;
-  width: 355;
-  height: 200;
-}
-
-<img src="images/crossroads.jpg" alt="Crossroads" usemap="#navigatormap">
-<map name="navigatormap">
-  <area shape="rect" coords="0,0,195,439" href="https://en.wikipedia.org/wiki/Millery" alt="Millery">
-  <area shape="rect" coords="196,0,390,439" href="https://en.wikipedia.org/wiki/Nomeny" alt="Nomeny">
-</map>
-
-<img src="images/crossroads.jpg" alt="Crossroads" usemap="#navigatormap">
-<map name="navigatormap">
-  <area shape="rect" coords="0,0,195,439" href="https://en.wikipedia.org/wiki/Millery" alt="Millery">
-  <area shape="rect" coords="196,0,390,439" href="https://en.wikipedia.org/wiki/Nomeny" alt="Nomeny">
-</map>
-
-
-block vs inline 
-https://codepen.io/m8trix310/pen/mdQQBaB
-  
-https://1sfu-my.sharepoint.com/personal/aka139_sfu_ca/_layouts/15/stream.aspx?id=%2Fpersonal%2Faka139%5Fsfu%5Fca%2FDocuments%2FSpicePro%2Fspice%2EMOV&ga=1
--- >
