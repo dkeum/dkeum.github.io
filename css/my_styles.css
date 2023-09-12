@@ -4,96 +4,109 @@ body {
         linear-gradient(to top left, lime, transparent),
         linear-gradient(to top right, blue, transparent);
     background-blend-mode: screen;
-    background-size: 100% 100%;
+    background-size: cover;
     height: 100vh;
-    width: 100vw;
     margin: 0;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center horizontally */
-    justify-content: center; /* Center vertically */
+    align-items: center;
+    justify-content: center;
     font-size: 1vw;
 }
 
-
-h2{
-    color:white;
+h2 {
+    color: white;
 }
 
 .rectangle_black {
-    width: 50vw; /* Set width of the rectangle */
-    height: 20vw; /* Set height of the rectangle */
-    background-color: black; /* Background color of the rectangle */
-    justify-content: flex-start; /* Center horizontally within the black rectangle */
-    align-items: center; /* Center vertically within the black rectangle */
+    width: 50%;
+    height: 20%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .rectangle_white {
-    width: 50vw; /* Set width of the rectangle */
-    height: 75vh; /* Set height of the rectangle */
-    background-color: white; /* Background color of the rectangle */
+    width: 50%;
+    height: 75%;
+    background-color: white;
 }
 
 .rectangle_grey {
-    width: 50vw; /* Set width of the rectangle */
-    height: 5vh; /* Set height of the rectangle */
-    background-color: rgba(213, 208, 208, 0.991); /* Background color of the rectangle */
+    width: 50%;
+    height: 5%;
+    background-color: rgba(213, 208, 208, 0.991);
 }
 
-.profile_pic_img{
+.profile_pic_img {
     margin-left: 5%;
-    margin-top: 13%;
+    margin-top: 5%;
     padding: 1% 1%;
     border-width: 1%;
     border-style: double;
     background-color: white;
-    width: 30%;
+    max-width: 100%;
     height: auto;
     object-fit: cover;
 }
 
-.profile_description{
+.profile_description {
     font-family: Verdana, sans-serif;
-    color:black;
-    width: 40%;
-    height: 35%;
+    color: black;
+    width: 90%;
     text-align: center;
-    position: relative; /* Set position to absolute for precise positioning */
-    left: calc(40%); /* 30% width of the image + 10px offset */
-    bottom: 55%; /* Same as the top margin of the image */
+    margin: 0 auto; /* Center horizontally */
+    margin-top: 5%; /* Adjust as needed */
 }
 
-.rectangle_grey_about{
-    width: 30vw; /* Set width of the rectangle */
-    height: 5vh; /* Set height of the rectangle */
-    margin-left:5%;
-    background-color: rgba(213, 208, 208, 0.991); /* Background color of the rectangle */
+.rectangle_grey_about {
+    width: 30%;
+    height: 5%;
+    margin-left: 5%;
+    background-color: rgba(213, 208, 208, 0.991);
     border-radius: 3%;
 }
 
-ul{
+ul {
     list-style-type: none;
-    position: relative; /* Set position to absolute for precise positioning */
-    left: calc(1%); /* 30% width of the image + 10px offset */
-}
-#about{
-    margin-top: 3%;
-    margin-left:10%;
+    margin-left: 1%; /* Use margin instead of relative positioning */
 }
 
-.card_description{
+#about {
+    margin-top: 3%;
+    margin-left: 10%;
+}
+
+.card_description {
     margin-left: 10%;
 }
 
 .project-content {
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Vertically align items */
-    gap: 20px; /* Add some space between video and paragraph */
-  }
-
-.project-container_v1project-container {
-    margin-bottom: 10px; /* Add space between projects if desired */
     display: flex;
-    flex-direction: column; /* Stack project containers vertically */
-    align-items: flex-start; /* Align items to the start of the container */
-  }
+    align-items: center;
+    gap: 20px;
+}
+
+.project-container {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .rectangle_black,
+    .rectangle_white,
+    .rectangle_grey,
+    .profile_description,
+    .rectangle_grey_about,
+    #about,
+    .card_description,
+    .project-container_v1,
+    .project-content {
+        width: 90%; /* Adjust as needed for smaller screens */
+    }
+}
